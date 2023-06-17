@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* CSS code */
+    body {
+      background-color: #ACEBFF;
+    }
+    .center-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .embed-container {
+      width: 400px;
+      margin: 10px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .white-box {
+      background-color: #ffffff;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      height: 100%;
+    }
+    .embed-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100%;
+    }
+    @media (max-width: 767px) {
+      .center-content {
+        flex-direction: column;
+      }
+      .embed-wrapper {
+        flex-direction: column;
+      }
+      .embed-container {
+        width: 100%;
+      }
+      .white-box {
+        width: 100%;
+      }
+    }
+  </style>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</head>
+<body>
+  <div class="center-content">
+    <div class="embed-wrapper">
+      <div class="embed-container">
+        <!-- Twitter embed code -->
+        <a class="twitter-timeline" href="https://twitter.com/PinkNews" data-tweet-limit="1">Tweets by PinkNews</a>
+      </div>
+
+      <div class="embed-container white-box">
+        <!-- Embedded news website using an iframe -->
+        <iframe src="https://www.thepinknews.com/" width="100%" height="100%" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
